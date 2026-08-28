@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg?v=3" alt="Artem Barsukov" width="100%"/>
+<img src="assets/header.svg?v=4" alt="Artem Barsukov" width="100%"/>
 
 <br/>
 
@@ -71,6 +71,6 @@
 
 <br/>
 
-<img src="assets/footer.svg?v=3" width="100%" alt=""/>
+<img src="assets/footer.svg?v=4" width="100%" alt=""/>
 
 </div>
