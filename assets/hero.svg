@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Artem Barsukov — founder of Nork Studio, software engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07040d"/>
+      <stop offset="0.55" stop-color="#0d0616"/>
+      <stop offset="1" stop-color="#160826"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff2d95"/>
+      <stop offset="0.5" stop-color="#ff5fc1"/>
+      <stop offset="1" stop-color="#b44dff"/>
+    </linearGradient>
+    <radialGradient id="blobPink" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff2d95" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff2d95" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobViolet" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8a2be2" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#8a2be2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="a1"/>
+      <feFlood flood-color="#ff2d95" flood-opacity="0.9" result="c1"/>
+      <feComposite in="c1" in2="a1" operator="in" result="g1"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="a2"/>
+      <feFlood flood-color="#ff7ad1" flood-opacity="1" result="c2"/>
+      <feComposite in="c2" in2="a2" operator="in" result="g2"/>
+      <feMerge><feMergeNode in="g1"/><feMergeNode in="g1"/><feMergeNode in="g2"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ff2d95" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="320" rx="24"/></clipPath>
+    <style>
+      .t { font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      .name { font-weight: 800; font-size: 68px; letter-spacing: 4px; fill: #ffffff; }
+      .sub  { font-weight: 600; font-size: 20px; letter-spacing: 6px; fill: #ff5fc1; }
+      .tag  { font-weight: 500; font-size: 16px; letter-spacing: 2px; fill: #b89bd6; }
+      .code { font-family: Consolas, "Courier New", monospace; font-weight: 700; font-size: 92px; fill: none; stroke: url(#neon); stroke-width: 3; }
+      @keyframes pulse { 0%,100% { opacity: 1 } 50% { opacity: .88 } }
+      @keyframes scan  { 0% { transform: translateY(-10px) } 100% { transform: translateY(330px) } }
+      @keyframes drift1 { 0%,100% { transform: translate(0,0) } 50% { transform: translate(40px,-20px) } }
+      @keyframes drift2 { 0%,100% { transform: translate(0,0) } 50% { transform: translate(-30px,25px) } }
+      @keyframes flicker { 0%,19%,21%,23%,100% { opacity:1 } 20%,22% { opacity:.55 } }
+      .pulse { animation: pulse 3.2s ease-in-out infinite; }
+      .scan  { animation: scan 6s linear infinite; }
+      .d1 { animation: drift1 9s ease-in-out infinite; }
+      .d2 { animation: drift2 11s ease-in-out infinite; }
+      .flick { animation: flicker 7s linear infinite; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <g class="d1"><circle cx="1010" cy="70" r="240" fill="url(#blobPink)"/></g>
+    <g class="d2"><circle cx="160" cy="300" r="220" fill="url(#blobViolet)"/></g>
+    <g class="scan"><rect x="0" y="0" width="1200" height="2" fill="#ff2d95" opacity="0.35"/></g>
+
+    <g class="t">
+      <text x="72" y="150" class="name pulse" filter="url(#glow)">ARTEM BARSUKOV</text>
+      <rect x="72" y="172" width="440" height="3" rx="1.5" fill="url(#neon)" filter="url(#softglow)"/>
+      <text x="72" y="214" class="sub">NZT · FOUNDER OF NORK STUDIO</text>
+      <text x="72" y="246" class="sub">SOFTWARE ENGINEER</text>
+      <text x="72" y="284" class="tag">desktop · android · telegram bots · automation · local AI</text>
+    </g>
+
+    <g transform="translate(900,160)" class="flick">
+      <text x="0" y="34" text-anchor="middle" class="t code" filter="url(#glow)">&lt;/&gt;</text>
+      <circle r="118" fill="none" stroke="url(#neon)" stroke-width="2" stroke-opacity="0.7" filter="url(#softglow)"/>
+      <circle r="132" fill="none" stroke="#ff2d95" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="6 10"/>
+    </g>
+
+    <rect x="1" y="1" width="1198" height="318" rx="24" fill="none" stroke="url(#neon)" stroke-opacity="0.55" stroke-width="1.5"/>
+  </g>
+</svg>
