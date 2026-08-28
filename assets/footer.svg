@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" width="1200" height="140">
+  <defs>
+    <linearGradient id="w1" x1="0" x2="1"><stop offset="0" stop-color="#ff2d95"/><stop offset="1" stop-color="#8a2be2"/></linearGradient>
+    <linearGradient id="w2" x1="0" x2="1"><stop offset="0" stop-color="#b44dff"/><stop offset="1" stop-color="#ff2d95"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="c"><rect width="1200" height="140" rx="20"/></clipPath>
+    <style>
+      @keyframes wave{0%{transform:translateX(0)}100%{transform:translateX(-600px)}}
+      .a{animation:wave 14s linear infinite}.b{animation:wave 20s linear infinite reverse}
+      .t{font-family:"Segoe UI",Helvetica,Arial,sans-serif;font-weight:600;font-size:15px;letter-spacing:4px;fill:#ffd6ec}
+    </style>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="1200" height="140" fill="#0b0713"/>
+    <g class="b" opacity="0.35"><path fill="url(#w2)" d="M0 70 Q150 30 300 70 T600 70 T900 70 T1200 70 T1500 70 T1800 70 V140 H0Z"/></g>
+    <g class="a" opacity="0.8" filter="url(#g)"><path fill="url(#w1)" d="M0 90 Q150 50 300 90 T600 90 T900 90 T1200 90 T1500 90 T1800 90 V140 H0Z"/></g>
+    <text class="t" x="600" y="42" text-anchor="middle">BUILT WITH CODE AND COFFEE · NORK STUDIO · @lightnzt</text>
+  </g>
+</svg>
