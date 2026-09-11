@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Artem Barsukov — founder of Nork Studio, software engineer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Artem Barsukov — founder of ByteTasty, software engineer">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07040d"/>
@@ -64,7 +64,7 @@
     <g class="t">
       <text x="72" y="150" class="name pulse" filter="url(#glow)">ARTEM BARSUKOV</text>
       <rect x="72" y="172" width="440" height="3" rx="1.5" fill="url(#neon)" filter="url(#softglow)"/>
-      <text x="72" y="214" class="sub">NZT · FOUNDER OF NORK STUDIO</text>
+      <text x="72" y="214" class="sub">NZT · FOUNDER OF BYTETASTY</text>
       <text x="72" y="246" class="sub">SOFTWARE ENGINEER</text>
       <text x="72" y="284" class="tag">desktop · android · telegram bots · automation · local AI</text>
     </g>
